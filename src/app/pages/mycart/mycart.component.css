@@ -1,0 +1,29 @@
+table{
+    text-align: left;
+    color: blueviolet;
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+  }
+  table td,table th{
+    min-height: 160px;
+    text-align: left;
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  h1{
+    text-align: center;
+    text-decoration: aliceblue;
+  }
+  th {
+    background-color: #04AA6D;
+    color: white;
+  }
+  input[text=text]{
+    width:35%;
+  }
+  img{
+    width: 100px;
+    height:100px;
+  }
+  

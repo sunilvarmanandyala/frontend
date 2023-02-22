@@ -1,0 +1,47 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <div class="container-fluid">
+    <a class="navbar-brand" routerLink="">Library Managment System</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item ">
+          <a class="nav-link active" routerLink="" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}">Home</a>
+        </li>
+        <a mat-button *ngIf="!loggedIn" [matMenuTriggerFor]="menu">Login</a>
+         <mat-menu #menu="matMenu">
+         <button mat-menu-item class="nav-link" *ngIf="!loggedIn" routerLink="login-staff">Staff Login</button>
+         <button mat-menu-item class="nav-link" *ngIf="!loggedIn" routerLink="login">User Login</button>
+        </mat-menu>
+        <a mat-button  *ngIf="!loggedIn" [matMenuTriggerFor]="menu1">Sign Up</a>
+         <mat-menu #menu1="matMenu">
+         <button mat-menu-item class="nav-link" *ngIf="!loggedIn" routerLink="register-staff">Staff Signup</button>
+         <button mat-menu-item class="nav-link" *ngIf="!loggedIn" routerLink="register">User Signup</button>
+        </mat-menu>
+        <!-- <li class="nav-item">
+          <a class="nav-link" *ngIf="staffloggedIn" routerLink= "/details" >Details</a>   
+      </li> -->
+      <li class="nav-item">
+        <a class="nav-link" *ngIf="getaccountuser()" routerLink= "/allbooks" >Books</a>   
+        <a class="nav-link" *ngIf="getaccountstaff()"  routerLink= "/log" >Dashboard</a>    
+      
+    </li>
+        <li class="nav-item">
+            <a class="nav-link" *ngIf="loggedIn" routerLink= "" (click)="LogoutUser()" >Logout</a>
+            <a class="nav-link" *ngIf="getaccountuser()" routerLink= "mycart" >My Cart</a>   
+            
+        </li>
+      </ul>
+    </div>
+</div>
+</nav>
+  <!-- <mat-toolbar color="primary">
+    <span>Library Managment</span>
+    <div class="example-spacer"></div>
+    <a mat-button *ngIf="loggedIn" routerLink="/">Home</a>
+    <a mat-button *ngIf="!loggedIn" routerLink="login">Login</a>
+    <a mat-icon-button *ngIf="loggedIn" routerLink="login">Logout</a>
+    <a mat-button *ngIf="!loggedIn" routerLink="register">Sign up</a>
+  </mat-toolbar> -->
+

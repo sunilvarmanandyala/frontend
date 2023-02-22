@@ -1,0 +1,12 @@
+.navbar-light .navbar-nav .nav-link.active-link
+{
+    color:blue;
+    font-weight: bold;
+}
+.example-spacer{
+    flex: 1 1 auto;
+    
+}
+.mat-menu-content {
+    background: #fff;
+}

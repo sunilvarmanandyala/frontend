@@ -1,0 +1,31 @@
+<div class="userlist">
+    <h1 > Users List </h1>
+    <table>
+        <thead>
+           <tr>
+            <th>Id</th>
+            <th>username</th>
+            <th>password</th>
+            <th>Phone Number</th>
+            <th>Action</th>
+           </tr> 
+        </thead>
+    <tbody>
+        <tr *ngFor="let i of getusers">
+            <td>{{i.user_Id}}</td>
+            <td>{{i.username}}</td>
+            <td>{{i.password}}</td>
+            <td>{{i.userPhNo}}</td>
+          <td><button (click)="deleteUser(i.user_Id)">Delete</button></td>
+        </tr>
+    </tbody>
+    </table>
+    <!-- <mat-card class="mdcardcontact" *ngFor="let item of data ">
+        <mat-card-header style="background-color: black;   width:100%"> User Details </mat-card-header>
+    
+        <mat-card-content>UserName= {{item.username}}</mat-card-content>
+        <mat-card-content>UserPhNo= {{item.userPhNo}}</mat-card-content>    
+    </mat-card> -->
+    </div>
+      
+    

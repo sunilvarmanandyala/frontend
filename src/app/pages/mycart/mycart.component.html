@@ -1,0 +1,27 @@
+
+<div class="userlist">
+    <h1>You can Check your Book status Here!</h1>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <!-- <input type="text" placeholder="Search...." Class="form-control md-5" ng-model="allkeywords"> -->
+
+    <table>
+        <thead>
+           <tr>
+            <th>Book Id</th>
+            <th>User Id</th>
+            <th>Date</th>
+            <th>Status</th>
+           </tr> 
+        </thead>
+    <tbody>
+         <tr *ngFor="let i of getDetails">
+            <td>{{i.book_Id}}</td>
+            <td>{{i.userId}}</td>
+            <td>{{i.date}}</td>
+            <td>{{i.status}}</td>
+          <!-- <td><button (click)="deleteBook(i.book_Id)">Delete</button></td> -->
+        </tr> 
+    </tbody>
+    </table>
+</div>

@@ -1,0 +1,63 @@
+<!-- <p>allbooks works!</p>
+<div class="container text-center">
+    <h1>List of Books !! </h1>
+    <mat-card class="mdcardcontact" *ngFor="let i of getbooks ">
+        <mat-card-header style="background-color: black;   width:100%"> Book Details </mat-card-header>
+        <mat-card-content>Book Id= {{i.book_Id}}</mat-card-content>
+        <mat-card-content>Access Number= {{i.accessnumber}}</mat-card-content>
+        <mat-card-content>Tittle= {{i.title}}</mat-card-content>
+        <mat-card-content>Author= {{i.author}}</mat-card-content>
+        <mat-card-content>Subject= {{i.subject}}</mat-card-content>
+        <mat-card-content>Category= {{i.category}}</mat-card-content>
+        <mat-card-content>Keyword= {{i.keyword}}</mat-card-content>
+        <button  routerLink="/details">Add to cart</button>
+    </mat-card>
+    </div> -->
+<!-- <div class="container">
+    <div class="nav-search">
+        <input type="text" placeholder="Search for books">
+        <button class="button">Search</button>
+        <br>
+    </div>
+        <div class="card">
+            <h2 class="book_list">List of Books</h2>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="card">
+                        <th *ngFor="let i of getbooks">
+                            <img class="card-img-top" src="{{i.img}}"
+                            height="200px" width="100px" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">Tittle= {{i.title}}</p>
+                                <p class="card-text">Author= {{i.author}}</p>
+                                <p class="card-text">Subject= {{i.subject}}</p>
+                                <p class="card-text">Category= {{i.category}}</p>
+                           <a href="#"  routerLink="/details" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </th>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div> -->
+<div class="container">
+    <div class="nav-search">
+        <form (ngSubmit)="search()">
+        <input type="text" placeholder="Search for books" name="searchName" [(ngModel)]="searchName">
+        <button class="button" type="submit">Search</button></form>
+        <br>
+    </div>
+
+<div class="container text-center">
+    <h1>books !! </h1>
+    <mat-card class="mdcardcontact" *ngFor="let i of getbooks ">
+        <!-- <mat-card-header style="background-color: rgb(175, 239, 206);   width:100%"> </mat-card-header> -->
+        <mat-card-content ><img src="{{i.img}}" class="images" /></mat-card-content>
+        <mat-card-content>Book Id= {{i.book_Id}}</mat-card-content>
+        <mat-card-content>Tittle= {{i.title}}</mat-card-content>
+        <mat-card-content>Author= {{i.author}}</mat-card-content>
+        <mat-card-content>Subject= {{i.subject}}</mat-card-content>
+        <mat-card-content>Category= {{i.category}}</mat-card-content>
+        <a href="#"  routerLink="/details" class="btn btn-primary">BOOK NOW</a>
+    </mat-card>
+    </div>

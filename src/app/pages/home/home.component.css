@@ -1,0 +1,52 @@
+.container {
+    padding: 10px;
+}
+
+.container .nav-search {
+    text-align: center;
+}
+
+.button {
+    margin: 10px;
+}
+.book_list {
+    text-align: center;
+}
+
+.card {
+    padding: 14px;
+    
+}
+.card .row {
+    display: grid;
+}
+.card-body {
+    float: left;
+}
+
+.example-card {
+    max-width: 400px;
+    margin-bottom: 8px;
+    /* float: left; */
+    /* max-width: 400px;
+  margin-bottom: 8px; */
+}
+.carousel-slide{
+    height: 200px;
+    width: 200px;
+
+}
+.mdcardcontact{
+    width: 245px;
+    height: 370px;
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.images{
+    width: 170px;
+    height: 200px;
+}
+.carousel-item{
+    height:300px;
+}

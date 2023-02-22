@@ -1,0 +1,40 @@
+<div class="booklist">
+    <h1>You can Check Library Books Details Here !! </h1>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <div class="nav-search">
+        <form (ngSubmit)="search()">
+        <input type="text" placeholder="Search for books" name="searchName" [(ngModel)]="searchName">
+        <button class="button" type="submit">Search</button></form>
+        <br>
+    </div>
+
+    <table>
+        <thead>
+           <tr>
+            <th>Book Id</th>
+            <th>Image</th>
+            <th>Access Number</th>
+            <th>Tittle</th>
+            <th>Author</th>
+            <th>Subject</th>
+            <th>Category</th>
+            <th>Keyword</th>
+            <th>Action</th>
+           </tr> 
+        </thead>
+    <tbody>
+        <tr *ngFor="let i of getbooks">
+            <td>{{i.book_Id}}</td>
+            <td> <img src="{{i.img}}"/></td>
+            <td>{{i.accessnumber}}</td>
+            <td>{{i.title}}</td>
+            <td>{{i.author}}</td>
+            <td>{{i.subject}}</td>
+            <td>{{i.category}}</td>
+            <td>{{i. keyword}}</td>
+          <td><button style="background-color: rgb(55, 198, 93);"  (click)="deleteBook(i.book_Id)">Delete</button></td>
+        </tr>
+    </tbody>
+    </table>
+</div>

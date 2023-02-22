@@ -1,0 +1,73 @@
+.container {
+    padding: 20px;
+    text-align: center;
+    background-image: url('https://thumbs.dreamstime.com/b/old-book-flying-letters-magic-light-background-bookshelf-library-ancient-books-as-symbol-knowledge-history-218640948.jpg');
+}
+.header {
+    padding: 60px;
+    text-align: center;
+    background: #0e0e0e8c;
+    color: white;
+    font-size: 30px;
+  }
+.full-width{
+    margin: 20px;
+    text-shadow: 10px;
+    
+}
+
+.admin {
+    padding: 20px;
+}
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+.btn {
+    padding-left: 10px;
+}
+.button {
+    margin: 10px;
+}
+.book_list {
+    text-align: center;
+}
+
+.card {
+    padding: 14px;
+    
+}
+.card .row {
+    display: grid;
+}
+.card-body {
+    float: left;
+}
+
+.example-card {
+    max-width: 400px;
+    margin-bottom: 8px;
+    /* float: left; */
+    /* max-width: 400px;
+  margin-bottom: 8px; */
+}
+
+.mdcardcontact{
+    width: 215px;
+    height: 300px;
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.images{
+    width: 170px;
+    height: 200px;
+}
+.card-img-top{
+    width:200px;
+    height: 300px;
+}

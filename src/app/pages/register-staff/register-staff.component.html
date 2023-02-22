@@ -1,0 +1,49 @@
+<div class="bootstrap-wrapper">
+    <div class="container mt">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <div class="container text-center">
+                <img class="img-fluid" style="width: 100px;" src="/assets/register.png" alt="" /> 
+            </div>
+
+            <h1 class="text-center"> Staff Registration page !!</h1>
+
+            <!-- creating form -->
+
+            <form (ngSubmit)="onsubmit()">
+                <mat-form-field class="full-width">
+                    <mat-label>Username</mat-label>
+                    <input 
+                    [(ngModel)]="credentials.username" 
+                    name="username" required
+                    type="text" matInput />
+                </mat-form-field>
+                <mat-form-field class="full-width">
+                    <mat-label>Password</mat-label>
+                    <input 
+                    [(ngModel)]="credentials.password"
+                    name="password" required
+                    type="password" matInput />
+                </mat-form-field>
+                <mat-form-field class="full-width">
+                    <mat-label>staff phno</mat-label>
+                    <input 
+                    [(ngModel)]="credentials.staffPhNo" required
+                    name="userPhNo"
+                    type="text" matInput />
+                </mat-form-field>
+                <div class="container text-center">
+
+                <button type="submit" mat-raised-button color="primary">Register</button>
+                <button style="margin-left: 10px;" type="reset" mat-raised-button color="accent">Reset</button>
+                
+
+            </div>
+
+                
+            </form>
+
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,73 @@
+<div class="bootstrap-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="container text-center">
+                    <img class="img-fluid" 
+                    style="width: 100px" 
+                    src="/assets/Book1.com.png" 
+                    alt=""/>
+                </div>
+                <h1 class="text-center">Add Book here !!</h1>
+                <form (ngSubmit)="onSubmit()">
+                    <mat-form-field class="full-width">
+                        <mat-label>Img</mat-label>
+                        <input 
+                        [(ngModel)]="credentials.img"
+                        name="img"
+                        required type="url" matInput />
+                    </mat-form-field>
+                <form (ngSubmit)="onSubmit()">
+                    <mat-form-field class="full-width">
+                        <mat-label>accessnumber</mat-label>
+                        <input 
+                        [(ngModel)]="credentials.accessnumber"
+                        name="accessnumber"
+                        required type="text" matInput />
+                    </mat-form-field>
+                    <mat-form-field class="full-width">
+                        <mat-label>Title</mat-label>
+                        <input 
+                        [(ngModel)]="credentials.title"
+                        name="title"
+                        required type="text" matInput />
+                    </mat-form-field>
+                    <mat-form-field class="full-width">
+                        <mat-label>Author</mat-label>
+                        <input 
+                        [(ngModel)]="credentials.author"
+                        name="author"
+                        required type="text" matInput />
+                    </mat-form-field>
+                    <mat-form-field class="full-width">
+                        <mat-label>Subject</mat-label>
+                        <input 
+                        [(ngModel)]="credentials.subject"
+                        name="subject"
+                        required type="text" matInput />
+                    </mat-form-field>
+                    <mat-form-field class="full-width">
+                        <mat-label>Keyword</mat-label>
+                        <input 
+                        [(ngModel)]="credentials.keyword"
+                        name="keyword"
+                        required type="text" matInput />
+                    </mat-form-field>
+                    <mat-form-field class="full-width">
+                        <mat-label>Category</mat-label>
+                        <input 
+                        [(ngModel)]="credentials.category"
+                        name="Category"
+                        required type="text" matInput />
+                    </mat-form-field>
+                    
+                    <div class="container text-center">
+                        <button type="submit" mat-raised-button color="primary">Submit</button>
+                        
+                    </div>
+                </form>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
