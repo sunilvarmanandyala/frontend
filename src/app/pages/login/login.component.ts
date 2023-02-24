@@ -31,7 +31,7 @@ onSubmit()
            console.log(response);
            this.loginService.loginUser(response.token)
            this.snackbar.open("Login successfull","close")
-           
+           window.location.href="/allbooks"
   },
   error=>{
     //error
